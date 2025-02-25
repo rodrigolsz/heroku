@@ -49,11 +49,12 @@ def activar_dispositivo(driver, token):
                 boton = WebDriverWait(driver, 5).until(  # Espera hasta 5s por botón
                     EC.element_to_be_clickable((By.ID, btn_id))
                 )
+                boton_texto = boton.text.strip() if boton.text else "Botón sin texto"
                 boton.click()
                 time.sleep(2)  # Pequeña pausa entre clics
-                print(f"Botón {btn_id} activado.")
+                print(f"Se activó el botón: {boton_texto}")
             except:
-                print(f"Botón {btn_id} no encontrado o no clickeable.")
+                print(f"No se encontró o no se pudo activar un botón con ID {btn_id}.")
 
         print(f"Dispositivos activados para token {token}.\n")
 
