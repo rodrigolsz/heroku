@@ -30,7 +30,8 @@ tokens = ["XDG9ER", "C5RZYQ"]
 button_ids = [
     "btnactiv_9bccbfb620d700c7",
     "btnactiv_c2182d10f040df31",
-    "btnactiv_4879e7ffe83cf0dc"
+    "btnactiv_4879e7ffe83cf0dc",
+    "btnactiv_8531d42b46ae25be
 ]
 
 def activar_dispositivo(driver, token):
@@ -40,8 +41,8 @@ def activar_dispositivo(driver, token):
         driver.get(url)
         print(f"Página cargada: {driver.title}")
 
-        # Esperar 15 segundos para que los botones aparezcan
-        time.sleep(15)
+        # Esperar 20 segundos para que los botones aparezcan
+        time.sleep(20)
 
         # Intentar hacer clic en cada botón individualmente
         for btn_id in button_ids:
