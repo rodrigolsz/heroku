@@ -28,8 +28,8 @@ tokens = ["XDG9ER", "C5RZYQ"]
 
 # IDs de los botones a hacer clic
 button_ids = [
-    "btnactiv_9bccbfb620d700c7",
     "btnactiv_c2182d10f040df31",
+    "btnactiv_9bccbfb620d700c7",
     "btnactiv_4879e7ffe83cf0dc",
     "btnactiv_8531d42b46ae25be"
 ]
